@@ -5,7 +5,7 @@
 #include <EEPROM.h>
 #include <Firebase_ESP_Client.h>
 
-#include <WiFiManager.h>
+
 
 
 //Provide the token generation process info.
@@ -59,7 +59,6 @@ void setup() {
   pinMode(ledpin2 , OUTPUT);
    pinMode(buttonpin,INPUT); //for resetting WiFi creds
    
-  //WiFi.mode(WIFI_MODE_APSTA);
   
    
      
@@ -369,7 +368,6 @@ void loop() {
            
         }
          else if(rebootinternet()){
-           // ESP.restart;
         }
 
          
