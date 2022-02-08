@@ -1,7 +1,7 @@
 # _Onetouch
 A smart ESP32 iot device used in controllling various electronics from the range of lightning devices, wall socket , HVAc ETC. via the internet or wirelessly using WiFi.
 # BASICs
-The .ino code requires serveral libraries to function properly mostr especially the arduino json library latest version 6.xx, Firebase esp cliet library by Mobizt https://github.com/mobizt/Firebase-ESP-Client, And my onetouch wifi manager library https://github.com/megavel/MyCustomWifiManager for assigning the esp32 Custom ssid when being switched to SOFT AP mode  in other for it connect to, when rebooted back into STATION MODE. 
+The .ino code requires serveral libraries to function properly mostr especially the arduino json library latest version 6.xx, Firebase esp cliet library by Mobizt https://github.com/mobizt/Firebase-ESP-Client, And a wifi_manager for assigning the esp32 Custom ssid when being switched to SOFT AP mode  in other for it connect to, when rebooted back into STATION MODE. 
 The default ESP32 wifimanager STA MODE credentials are preprogrammed on the WIFImanager library as SSID: ESP32_WifiManager and PASSWORD: 12345678.
 
 #what does this syetem do
@@ -16,7 +16,7 @@ The WIFI Credential form can be activated manually by pressing the boot button o
 #include <EEPROM.h>
 #include <Firebase_ESP_Client.h>
 
-#include <WiFiManager.h>
+
 
 
 //Provide the token generation process info.
